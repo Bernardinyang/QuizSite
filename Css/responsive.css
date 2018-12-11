@@ -1,0 +1,119 @@
+@media only screen and (max-width: 544px) {
+
+    body {
+        height: auto;
+        background: white;
+    }
+
+    .container {
+        width: 100%;
+        border: none;
+    }
+
+    .options {
+        grid-template: repeat(5, auto) / repeat(12, 1fr);
+        grid-gap: 10px;
+        height: 100%;
+    }
+
+    .opt1 {
+        grid-column: 1 / -1;
+    }
+
+    .opt2 {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+
+    .opt3 {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+
+    .opt4 {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+    }
+
+    .btn_group {
+        grid-row: 5 / -1;
+        grid-gap: 5px;
+        grid-template-areas:
+            "c c c c c c c c c c c c"
+            "s s s s s s s s s s s s"
+        ;
+    }
+
+    /* Modals */
+    .modal-content {
+        display: grid;
+        border: none;
+        /*margin: 10% 0;*/
+        width: 90%;
+        /*height: 100%;*/
+    }
+
+    .modal-content footer {
+        display: grid;
+        grid-template: auto / repeat(12, 1fr);
+        grid-gap: 10px;
+    }
+
+    .modal-content footer button {
+        grid-column: 1 / -1;
+        padding: 15px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .quest_field .quest {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Result Page */
+    .container2 {
+        width: 100%;
+        display: none;
+        align-content: center;
+        margin-top: 100px;
+    }
+
+}
+
+@media only screen and (min-width: 545px) and (max-width: 771px) {
+
+    .container {
+        width: 100%;
+        border: none;
+    }
+
+    .btn_group {
+        grid-template-areas:
+            "s s s s s s c c c c c c"
+        ;
+    }
+
+    /* Modals */
+    .modal-content {
+        display: grid;
+        align-content: center;
+        border: none;
+        /*margin: 30% 0;*/
+        width: 90%;
+    }
+
+    .modal-content footer {
+        display: grid;
+        grid-template: auto / repeat(12, 1fr);
+        grid-gap: 10px;
+    }
+
+    .modal-content footer button {
+        grid-column: 1 / -1;
+        padding: 15px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+
+</head>
+<body>
+<section class="container firstContainer" id="container">
+
+    <div id="myModal" class="modal container">
+        <div class="modal-content">
+            <header>
+                <p>Surrender Confirmation Box</p>
+            </header>
+            <section>
+                <p>Are you sure you want to be a coward and surrender from this quiz?</p>
+            </section>
+            <footer>
+                <button class="yesSurrender" id="yesSurrender">Surrender</button>
+                <button id="noSurrender" class="noSurrender">Back to Quiz</button>
+            </footer>
+        </div>
+    </div>
+
+    <h1 class="intro">Welcome to Quiz App</h1>
+    <div class="quest_field">
+        <p class="subject">Subject: General</p>
+        <p class="questionsRemaining" id="question_count_board">0 Questions</p>
+        <p class="time" id="timeInterval"></p>
+        <div class="quest" id="questions"></div>
+    </div>
+    <div class="options">
+        <div class="opt opt1">
+            <span class="opt_text">A</span>
+            <input type="radio" id="option_a" name="opt" value="a" >
+            <label id="optOne" for="option_a" onclick="activeOptions('a')"></label>
+        </div>
+        <div class="opt opt2">
+            <span class="opt_text">B</span>
+            <input type="radio" id="option_b" name="opt" value="b" >
+            <label id="optTwo" for="option_b" onclick="activeOptions('b')"></label>
+        </div>
+        <div class="opt opt3">
+            <span class="opt_text">C</span>
+            <input type="radio" id="option_c" name="opt" value="c" >
+            <label id="optThree" for="option_c" onclick="activeOptions('c')"></label>
+        </div>
+        <div class="opt opt4">
+            <span class="opt_text">D</span>
+            <input type="radio" id="option_d" name="opt" value="d" >
+            <label id="optFour" for="option_d" onclick="activeOptions('d')"></label>
+        </div>
+        <div class="btn_group">
+            <button id="surrender" class="surrender">Surrender</button>
+            <button id="nextQuestion" class="nextQuestion" onclick="nextQuestion()">Next Question</button>
+        </div>
+    </div>
+</section>
+
+<section class="container2" id="resultPage">
+    <header class="resultHeader">
+        <p>Quiz Result</p>
+    </header>
+    <section class="resultBody">
+        <header>
+            <div class="design"></div>
+            <img src="Images/congrats22.png" alt="Congrats" width="100%">
+            <!--<p>Congratulations!!!</p>-->
+        </header>
+        <section>
+            <p id="quiz_summary"></p>
+            <p id="score_summary"></p>
+            <p id="info" class="info"></p>
+        </section>
+    </section>
+    <footer class="resultFooter">
+        <button id="tryAgain">Try Again!</button>
+    </footer>
+</section>
+
+<script src="Js/main.js"></script>
+<script src="Js/questAndAns.js"></script>
+<script>
+
+</script>
+
+</body>
+</html>
